@@ -15,6 +15,7 @@
     "caniuse-lite": "^1.0.30000784",
     "nuxt": "^1.0.0-rc11",
     "vue": "^2.5.13",
+    "vue-server-renderer": "^2.5.13",
     "vuetify": "^0.17.4",
     "whatwg-fetch": "^2.0.3"
   },

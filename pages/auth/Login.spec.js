@@ -1,5 +1,5 @@
 import toBeType from "jest-tobetype"
-import { mount } from "vue-test-utils"
+import { mount } from "@vue/test-utils"
 import Login from "./Login"
 
 expect.extend(toBeType)
