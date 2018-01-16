@@ -25,7 +25,13 @@ module.exports = {
       }
     ]
   },
-  plugins: ["~/plugins/vuetify.js"],
+  modules: ["@nuxtjs/apollo"],
+  apollo: {
+    clientConfigs: {
+      default: "~/plugins/apollo.js"
+    }
+  },
+  plugins: ["~/plugins/plugins.js", "~/plugins/vuetify.js"],
   css: ["~/assets/style/app.styl"],
   /*
   ** Customize the progress bar color
