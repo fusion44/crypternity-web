@@ -39,8 +39,8 @@ export default {
       drawer: true,
       fixed: true,
       items: [
-        { icon: "apps", title: "Welcome", to: "/" },
-        { icon: "bubble_chart", title: "Inspire", to: "/inspire" }
+        { icon: "home", title: "Welcome", to: "/" },
+        { icon: "widgets", title: "Accounts", to: "/accounts" }
       ],
       miniVariant: true,
       title: "Crypternity"

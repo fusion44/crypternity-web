@@ -4,6 +4,7 @@ import {
   VApp,
   VAvatar,
   VCard,
+  VDataTable,
   VForm,
   VMenu,
   VNavigationDrawer,
@@ -12,7 +13,8 @@ import {
   VIcon,
   VGrid,
   VToolbar,
-  VTextField
+  VTextField,
+  VSelect
 } from "vuetify"
 
 Vue.use(Vuetify, {
@@ -29,6 +31,7 @@ Vue.use(Vuetify, {
     VApp,
     VAvatar,
     VCard,
+    VDataTable,
     VForm,
     VNavigationDrawer,
     VMenu,
@@ -37,6 +40,7 @@ Vue.use(Vuetify, {
     VIcon,
     VGrid,
     VToolbar,
-    VTextField
+    VTextField,
+    VSelect
   }
 })
