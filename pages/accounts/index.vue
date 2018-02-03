@@ -14,6 +14,7 @@
                   v-btn(@click="onActionClick('stats', props.item.id)" flat) stats 
                   v-btn(@click="onActionClick('edit', props.item.id)" flat) edit
                   v-btn(@click="onActionClick('delete', props.item.id)" flat) delete
+                  v-btn(@click="onActionClick('full_update', props.item.id)" flat) full update
           v-btn(router="router" to="/accounts/add" color="primary") ADD
 </template>
 
@@ -37,8 +38,43 @@ export default {
     }
   },
   methods: {
-    onActionClick: (type, id) => {
-      console.log("click ", type, id)
+    onActionClick(type, id) {
+      switch (type) {
+        case "stats":
+          console.log("click ", type, id)
+          break
+        case "edit":
+          console.log("click ", type, id)
+          break
+        case "delete":
+          console.log("click ", type, id)
+          break
+        case "full_update":
+          this.$apollo
+            .mutate({
+              mutation: gql`
+                mutation($input: AccountRefreshTransactionsMutationInput!) {
+                  accountRefreshTransactions(input: $input) {
+                    status
+                    msg
+                  }
+                }
+              `,
+              variables: {
+                input: {
+                  accountId: id
+                }
+              }
+            })
+            .then(({ data }) => {
+              console.log(data.accountRefreshTransactions.msg)
+            })
+            .catch(error => {
+              console.log(error)
+            })
+          break
+        default:
+      }
     }
   },
   apollo: {
