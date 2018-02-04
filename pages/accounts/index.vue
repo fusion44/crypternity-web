@@ -44,7 +44,7 @@ export default {
           console.log("click ", type, id)
           break
         case "edit":
-          console.log("click ", type, id)
+          this.$router.push(`/accounts/edit/${id}`)
           break
         case "delete":
           console.log("click ", type, id)
