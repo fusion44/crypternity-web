@@ -2,29 +2,29 @@
 
 exports[`ToolbarUserMenu renders correct markup signed in 1`] = `
 <div>
-    <div>Hello abcde
-        <v-menu offset-y="offset-y">
-            <v-btn slot="activator" icon="icon" flat="flat">
-                <v-icon dark="dark">account_circle</v-icon>
-            </v-btn>
-            <v-list>
-                <v-list-tile>
-                    <v-list-tile-title>Settings </v-list-tile-title>
-                </v-list-tile>
-                <v-list-tile>
-                    <v-list-tile-title>Logout </v-list-tile-title>
-                </v-list-tile>
-            </v-list>
-        </v-menu>
-    </div>
+  <div>Hello abcde
+    <v-menu offset-y="offset-y">
+      <v-btn slot="activator" icon="icon" flat="flat">
+        <v-icon dark="dark">account_circle</v-icon>
+      </v-btn>
+      <v-list>
+        <v-list-tile>
+          <v-list-tile-title>Settings </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-title>Logout </v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+    </v-menu>
+  </div>
 </div>
 `;
 
 exports[`ToolbarUserMenu renders the correct markup signed out 1`] = `
 <div>
-    <div>
-        <v-btn router="router" to="/auth/login" color="primary">Login</v-btn>
-        <v-btn router="router" to="/auth/register" color="primary">Register</v-btn>
-    </div>
+  <div>
+    <v-btn router="router" to="/auth/login" color="primary">Login</v-btn>
+    <v-btn router="router" to="/auth/register" color="primary">Register</v-btn>
+  </div>
 </div>
 `;

@@ -1,5 +1,4 @@
 const nodeExternals = require("webpack-node-externals")
-const resolve = dir => require("path").join(__dirname, dir)
 
 module.exports = {
   /*
@@ -65,7 +64,7 @@ module.exports = {
     ** Run ESLint on save
     */
     extend(config, ctx) {
-      if (ctx.dev && ctx.isClient) {
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: "pre",
           test: /\.(js|vue)$/,

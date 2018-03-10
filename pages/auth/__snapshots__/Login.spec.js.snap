@@ -2,19 +2,19 @@
 
 exports[`Login renders the correct markup 1`] = `
 <div>
-    <v-form lazy-validation="lazy-validation">
-        <h1>Login!</h1>
-        <v-text-field label="Username" required="required" error-messages="" rules="function username(value) {
+  <v-form lazy-validation="lazy-validation">
+    <h1>Login!</h1>
+    <v-text-field label="Username" required="required" error-messages="" rules="function username(value) {
           if (value.length < 3) return &quot;3 characters minimum&quot;;
           return true;
         }"></v-text-field>
-        <v-text-field label="Password" type="password" required="required" error-messages="" rules="function password(value) {
+    <v-text-field label="Password" type="password" required="required" error-messages="" rules="function password(value) {
           if (value.length < 6) return &quot;6 characters minimum&quot;;
           return true;
         }"></v-text-field>
-        <v-btn disabled="disabled">Login</v-btn>
-        <br>
-        <router-link to="/auth/register" color="grey">Register a new account</router-link>
-    </v-form>
+    <v-btn disabled="true">Login</v-btn>
+    <br>
+    <router-link to="/auth/register" color="grey">Register a new account</router-link>
+  </v-form>
 </div>
 `;
