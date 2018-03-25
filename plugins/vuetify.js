@@ -12,6 +12,7 @@ import {
   VBtn,
   VIcon,
   VGrid,
+  VTabs,
   VToolbar,
   VTextField,
   VSelect
@@ -39,6 +40,7 @@ Vue.use(Vuetify, {
     VBtn,
     VIcon,
     VGrid,
+    VTabs,
     VToolbar,
     VTextField,
     VSelect

@@ -5,4 +5,3 @@
     </v-flex>
   </v-layout>
 </template>
- 

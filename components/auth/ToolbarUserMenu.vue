@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     onSettingsClick() {
-      console.log("settings")
+      this.$router.push("/settings")
     },
     onLogoutClick() {
       this.logout()

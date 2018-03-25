@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings Index renders the correct markup default state 1`] = `
+<div>
+  <v-tabs dark="dark">
+    <v-tab>User Data</v-tab>
+    <v-tab-item>
+      <v-card flat="flat">
+        <h1>Update My Account Settings</h1>
+      </v-card>
+    </v-tab-item>
+    <v-tab>System Admin</v-tab>
+    <v-tab-item>
+      <v-card flat="flat">
+        <h3>Update Supported Coins </h3>
+        <v-btn disabled="true">Update</v-btn>
+      </v-card>
+    </v-tab-item>
+  </v-tabs>
+</div>
+`;
+
+exports[`Settings Index renders the correct markup with admin user 1`] = `
+<div>
+  <v-tabs dark="dark">
+    <v-tab>User Data</v-tab>
+    <v-tab-item>
+      <v-card flat="flat">
+        <h1>Update My Account Settings</h1>
+      </v-card>
+    </v-tab-item>
+    <v-tab>System Admin</v-tab>
+    <v-tab-item>
+      <v-card flat="flat">
+        <h3>Update Supported Coins </h3>
+        <v-btn>Update</v-btn>
+      </v-card>
+    </v-tab-item>
+  </v-tabs>
+</div>
+`;
