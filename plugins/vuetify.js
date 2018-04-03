@@ -14,6 +14,7 @@ import {
   VGrid,
   VTabs,
   VToolbar,
+  VTooltip,
   VTextField,
   VSelect
 } from "vuetify"
@@ -42,6 +43,7 @@ Vue.use(Vuetify, {
     VGrid,
     VTabs,
     VToolbar,
+    VTooltip,
     VTextField,
     VSelect
   }

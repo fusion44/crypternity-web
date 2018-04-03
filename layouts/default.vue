@@ -40,7 +40,8 @@ export default {
       fixed: true,
       items: [
         { icon: "home", title: "Welcome", to: "/" },
-        { icon: "widgets", title: "Accounts", to: "/accounts" }
+        { icon: "widgets", title: "Accounts", to: "/accounts" },
+        { icon: "list", title: "Transactions", to: "/transactions" }
       ],
       miniVariant: true,
       title: "Crypternity"
