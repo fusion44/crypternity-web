@@ -6,8 +6,8 @@ exports[`Account Add Index renders the correct markup 1`] = `
     <v-flex xs12="xs12" sm8="sm8" md6="md6">
       <v-text-field label="Name" hint="e.g. My Binance account"></v-text-field>
       <v-select label="Service" items="" item-text="longName" item-value="shortName"></v-select>
-      <v-text-field label="API Key"></v-text-field>
-      <v-text-field label="API secret"></v-text-field>
+      <!---->
+      <!---->
       <v-btn>SUBMIT </v-btn>
     </v-flex>
   </v-layout>

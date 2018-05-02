@@ -37,6 +37,10 @@
             div(class="tag" v-for="tag in t.tags") {{tag}}
         v-btn(@click="onActionClick('edit', t.id)" flat icon)
               v-icon(cached) edit
+    v-btn(fixed fab bottom right @click="onImportClick()")
+      v-icon import_export
+
+      
 </template>
 
 <script>
@@ -47,7 +51,8 @@ export default {
   components: { AmountContainer },
   data() {
     return {
-      transactions: null
+      transactions: null,
+      fab: false
     }
   },
   methods: {
@@ -58,6 +63,9 @@ export default {
           break
         default:
       }
+    },
+    onImportClick() {
+      this.$router.push("/transactions/import")
     }
   },
   apollo: {

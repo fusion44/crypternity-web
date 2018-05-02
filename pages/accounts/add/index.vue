@@ -4,9 +4,9 @@
         v-flex(xs12 sm8 md6) 
           v-text-field(v-model="name" label="Name", hint="e.g. My Binance account")
           v-select(label="Service" v-bind:items="supported_services" v-model="selected_service" 
-                   item-text="longName" item-value="shortName")
-          v-text-field(v-model="api_key" label="API Key")
-          v-text-field(v-model="api_secret" label="API secret")
+                   item-text="longName" item-value="shortName" :on-change="serviceSelected()")
+          v-text-field(v-if="importer_type === 'api'" v-model="api_key" label="API Key")
+          v-text-field(v-if="importer_type === 'api'" v-model="api_secret" label="API secret")
           v-btn(@click="submit") SUBMIT 
 </template> 
 
@@ -26,6 +26,13 @@ export default {
     }
   },
   methods: {
+    serviceSelected() {
+      this.supported_services.forEach(service => {
+        if (service.shortName === this.selected_service) {
+          this.importer_type = service.importer
+        }
+      })
+    },
     submit() {
       this.$apollo
         .mutate({
@@ -65,6 +72,7 @@ export default {
           supportedServices {
             shortName
             longName
+            importer
           }
         }
       `,
