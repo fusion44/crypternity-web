@@ -1,4 +1,6 @@
-# Crypternity-web
+# !Currently unmaintained!
+
+## Crypternity-web
 
 > Simple crypto portfolio management tool
 
